@@ -1,6 +1,5 @@
 def water_description(temperature)
   # if the temperature is below zero, then I return "ice"
-
   if temperature < 0
     return "ice"
 
@@ -10,8 +9,8 @@ def water_description(temperature)
   elsif temperature > 100
     return "steam"
   end
-
 end
+
 
 
 def tax_calculator(balance, account_type)
@@ -21,6 +20,7 @@ def tax_calculator(balance, account_type)
     return balance * 0.00
    end
 end
+
 
 
 def hero_movement(dice_roll, race)
@@ -35,7 +35,6 @@ end
 
 
 
-
 def should_eat(food, season)
   if food == "ice cream" && season == "winter"
     return false
@@ -44,4 +43,26 @@ def should_eat(food, season)
   else
     return true
     end
+end
+
+
+
+def volume_of_cube(side)
+  result = side ** 3
+  return result
+end
+
+
+
+def volume_of_sphere(radius)
+  fraction = 4/3r
+  result = fraction * Math::PI * radius ** 3
+  return result.to_i
+end
+
+
+
+def farenheit_to_celsius(temperature)
+  result = (temperature - 32) * 5 / 9
+  return result.to_i
 end

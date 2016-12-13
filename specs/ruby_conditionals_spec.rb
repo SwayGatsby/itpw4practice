@@ -97,19 +97,23 @@ class ConditionalsPracticeTest < MiniTest::Test
 
   #Given the length of a side of a cube calculate the volume
   def test_volume_of_cube()
-skip
+    result = volume_of_cube(5)
+    assert_equal(125, result)
   end
+
 
   #Given the radius of a sphere calculate the volume
   def test_volume_of_sphere()
-skip
+    result = volume_of_sphere(2)
+    assert_equal(33,result)
   end
 
   #Given a value in farenheit, convert this into celsius.
   def test_fahrenheit_to_celsius()
-skip
+    result = farenheit_to_celsius(32)
+    assert_equal(0,result)
   end
-
+#T(°C) = (T(°F) - 32) *5 / 9
 
 
 end
